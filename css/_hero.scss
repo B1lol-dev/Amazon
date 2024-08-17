@@ -1,0 +1,144 @@
+.hero{
+    margin-top: 109px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    .hero_carousel{
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        &::before{
+            content: "";
+            width: 100%;
+            height: 200px;
+            position: absolute;
+            bottom: 0;
+            background: linear-gradient(to bottom, transparent, $body_bg 70%);
+            z-index: 11;
+        }
+        
+        ul{
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            max-width: 1500px;
+            width: 100%;
+            object-fit: cover;
+
+            li{
+                transition: .3s;
+
+                a{
+                    object-fit: cover;
+                    img{
+                        max-width: 1500px;
+                    }
+                }
+            }
+
+
+        }
+
+        .carousel_control{
+            display: flex;
+            justify-content: space-between;
+            max-width: 1500px;
+            width: 100%;
+            position: absolute;
+            top: 10%;
+            z-index: 2;
+            left: 50%;
+            padding-inline: 20px;
+            transform: translateX(-50%);
+            
+            button{
+                font-size: 50px;
+                font-weight: 100;
+                border: none;
+                background: none;
+            }
+        }
+    }
+
+    .hero_main{
+        display: grid;
+        grid-template-columns: repeat(4 , 1fr);
+        grid-gap: 20px;
+        justify-content: space-between;
+        position: absolute;
+        top: 250px;
+        z-index: 11;
+        padding-bottom: 20px;
+
+
+        .hero_card{
+            max-width: 350px;
+
+            background: #fff;
+            padding-block: 20px;
+            position: relative;
+
+            &:nth-child(4) , &:nth-child(5) , &:nth-child(7) , &:nth-child(8){
+                .hero_card_content{
+                    grid-template-columns: repeat(1 , 1fr);
+
+                    .hero_card_item{
+                        max-width: 100%;
+
+                        img{
+                            height: 304px;
+                        }
+                    }
+                }
+            }
+
+            h1{
+                font-size: 21px;
+                margin-inline: 20px;
+            }
+
+            .hero_card_content{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                margin: 20px;
+                margin-top: 10px;
+                grid-gap: 15px;
+                
+                .hero_card_item{
+                    object-fit: cover;
+                    max-width: 185px;
+                    width: 100%;
+
+                    img{
+                        width: 100%;
+                        cursor: pointer;
+                    }
+
+                    a{
+                        color: $bg_pr_black;
+
+                        span{
+                            font-size: 12px;
+                        }   
+                    }
+                }
+            }
+
+            .card_link{
+                font-size: 13px;
+                color: $bg_sc_blue;
+                margin-inline: 20px;
+                position: absolute;
+                bottom: 20px;
+
+                &:hover{
+                    color: $bg_orange;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+
+    <link rel="stylesheet" href="./css/main.css">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- header start -->
+    <header>
+        <nav class="navbar">
+
+            <div class="nav_logo">
+                <a href="#">
+                    <img src="./assets/nav_logo.png" alt="Logo">
+                </a>
+            </div>
+
+            <div class="nav_deliver" id="nav_deliver">
+                <i class="fa-solid fa-location-dot"></i>
+                <div>
+                    <span>Deliver to</span>
+                    <p>Uzbekistan</p>
+                </div>
+            </div>
+
+            <form id="nav_form">
+                <select style="max-width: 50px;" name="nav_search_select" id="nav_search_select">
+                    <option selected="selected" value="search-alias=aps">All Departments</option>
+                    <option value="search-alias=arts-crafts-intl-ship">Arts &amp; Crafts</option>
+                    <option value="search-alias=automotive-intl-ship">Automotive</option>
+                    <option value="search-alias=baby-products-intl-ship">Baby</option>
+                    <option value="search-alias=beauty-intl-ship">Beauty &amp; Personal Care</option>
+                    <option value="search-alias=stripbooks-intl-ship">Books</option>
+                    <option value="search-alias=fashion-boys-intl-ship">Boys' Fashion</option>
+                    <option value="search-alias=computers-intl-ship">Computers</option>
+                    <option value="search-alias=deals-intl-ship">Deals</option>
+                    <option value="search-alias=digital-music">Digital Music</option>
+                    <option value="search-alias=electronics-intl-ship">Electronics</option>
+                    <option value="search-alias=fashion-girls-intl-ship">Girls' Fashion</option>
+                    <option value="search-alias=hpc-intl-ship">Health &amp; Household</option>
+                    <option value="search-alias=kitchen-intl-ship">Home &amp; Kitchen</option>
+                    <option value="search-alias=industrial-intl-ship">Industrial &amp; Scientific</option>
+                    <option value="search-alias=digital-text">Kindle Store</option>
+                    <option value="search-alias=luggage-intl-ship">Luggage</option>
+                    <option value="search-alias=fashion-mens-intl-ship">Men's Fashion</option>
+                    <option value="search-alias=movies-tv-intl-ship">Movies &amp; TV</option>
+                    <option value="search-alias=music-intl-ship">Music, CDs &amp; Vinyl</option>
+                    <option value="search-alias=pets-intl-ship">Pet Supplies</option>
+                    <option value="search-alias=instant-video">Prime Video</option>
+                    <option value="search-alias=software-intl-ship">Software</option>
+                    <option value="search-alias=sporting-intl-ship">Sports &amp; Outdoors</option>
+                    <option value="search-alias=tools-intl-ship">Tools &amp; Home Improvement</option>
+                    <option value="search-alias=toys-and-games-intl-ship">Toys &amp; Games</option>
+                    <option value="search-alias=videogames-intl-ship">Video Games</option>
+                    <option value="search-alias=fashion-womens-intl-ship">Women's Fashion</option>
+                </select>
+
+                <input autocomplete="off" type="search" name="nav_search_input" id="nav_search_input" placeholder="Search Amazon">
+
+                <button>
+                    <img src="./assets/search_icon.svg" alt="search">
+                </button>
+            </form>
+
+            <div class="nav_lang" id="nav_lang">
+                <div>
+                    <img src="./assets/usa_flag.png" alt="">
+                    <p>EN▾</p>
+                </div>
+
+                <div class="nav_lang_hover" id="nav_lang_hover">
+                    <p>Change language <span><a href="#">Learn more</a></span></p>
+                    <div class="flex">
+                        <input type="radio" name="nav_eng" id="nav_eng">
+                        <label for="nav_eng"><a href="#">español - ES</a></label>
+                    </div>
+
+                    <hr>
+                    
+                    <div class="flex">
+                        <input type="radio" name="nav_eng" id="nav_eng">
+                        <label for="nav_eng"><a href="#">العربية - AR</a></label>
+                    </div>
+                    
+                    <div class="flex">
+                        <input type="radio" name="nav_eng" id="nav_eng">
+                        <label for="nav_eng"><a href="#">Deutsh - DE</a></label>
+                    </div>
+                    
+                    <div class="flex">
+                        <input type="radio" name="nav_eng" id="nav_eng">
+                        <label for="nav_eng"><a href="#">עברית - HE</a></label>
+                    </div>
+                    
+                    <div class="flex">
+                        <input type="radio" name="nav_eng" id="nav_eng">
+                        <label for="nav_eng"><a href="#">한국어 - KO</a></label>
+                    </div>
+                    <div class="flex">
+                        <input type="radio" name="nav_eng" id="nav_eng">
+                        <label for="nav_eng"><a href="#">português - PT</a></label>
+                    </div>
+                    
+                    <div class="flex">
+                        <input type="radio" name="nav_eng" id="nav_eng">
+                        <label for="nav_eng"><a href="#">中文 (简体) - ZH</a></label>
+                    </div>
+                    
+                    <div class="flex">
+                        <input type="radio" name="nav_eng" id="nav_eng">
+                        <label for="nav_eng"><a href="#">中文 (繁體) - ZH</a></label>
+                    </div>
+
+                    <hr>
+
+                    <p>Change currency <span><a href="#">Learn more</a></span></p>
+
+                    <h5>$ - US Dollar <span><a href="#">Change</a></span></h5>
+
+                    <hr>
+
+                    <p>
+                        <img src="./assets/usa_flag.png" alt="USA" style="height: 13px;">
+                        You are shopping on <br> Amazon.com
+                    </p>
+
+                    <h6><a href="#">Change country/region.</a></h6>
+                </div>
+            </div>
+
+            <div class="nav_sign_in" id="nav_sign_in">
+                <span>Hello, sign in</span>
+                <p>Accounts & Lists ▾</p>
+            </div>
+
+            <div class="nav_return">
+                <span>Returns</span>
+                <p>& Orders</p>
+            </div>
+
+            <div class="nav_cart">
+                <div>
+                    <p>0</p>
+                    <img src="./assets/cart.svg" alt="">
+                </div>
+
+                <p>Cart</p>
+            </div>
+
+        </nav>
+
+        <div class="nav_bottom">
+            <ul>
+                <li id="nav_bottom_all">
+                    <i class="fa-solid fa-bars"></i>
+                    All
+                </li>
+
+                <li>Today's Deals</li>
+                <li>Customer Service</li>
+                <li>Registry</li>
+                <li>Gift Cards</li>
+                <li>Sell</li>
+
+
+            </ul>
+        </div>
+    </header>
+    <!-- header end -->
+
+
+    <!-- main start -->
+    <main>
+        <!-- hero start -->
+        <section class="hero">
+
+            <div class="hero_carousel">
+
+                <ul>
+
+                    <li id="carousel_item1">
+                        <a href="">
+                            <img src="./assets/hero1.jpg" alt="Kitchen">
+                        </a>
+                    </li>
+
+                    <li id="carousel_item2">
+                        <a href="">
+                            <img src="./assets/hero2.jpg" alt="Shop Books">
+                        </a>
+                    </li>
+
+                    <li id="carousel_item3">
+                        <a href="">
+                            <img src="./assets/hero3.jpg" alt="Essentials for Gamers">
+                        </a>
+                    </li>
+
+                    <li id="carousel_item4">
+                        <a href="">
+                            <img src="./assets/hero4.jpg" alt="New Arrival in Toys">
+                        </a>
+                    </li>
+                    
+                </ul>
+
+                <div class="carousel_control">
+                    <button id="carousel_prev">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    <button id="carousel_next">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="hero_main">
+
+                <div class="hero_card">
+                    <h1>Gaming accessories</h1>
+
+                    <div class="hero_card_content">
+
+                        <div class="hero_card_item">
+                            <img src="./assets/gaming1.jpg" alt="Headsets">
+                            <a href="#"><span>Headsets</span></a>
+                        </div>
+
+                        <div class="hero_card_item">
+                            <img src="./assets/gaming2.jpg" alt="Headsets">
+                            <a href="#"><span>Headsets</span></a>
+                        </div>
+
+                        <div class="hero_card_item">
+                            <img src="./assets/gaming3.jpg" alt="Headsets">
+                            <a href="#"><span>Headsets</span></a>
+                        </div>
+
+                        <div class="hero_card_item">
+                            <img src="./assets/gaming4.jpg" alt="Headsets">
+                            <a href="#"><span>Headsets</span></a>
+                        </div>
+
+                    </div>
+
+                    <a href="#" class="card_link">See more</a>
+                </div>
+
+                <div class="hero_card">
+                    <h1>Refresh your space</h1>
+
+                    <div class="hero_card_content">
+
+                        <div class="hero_card_item">
+                            <img src="./assets/refresh1.jpg" alt="Dining">
+                            <a href="#"><span>Dining</span></a>
+                        </div>
+
+                        <div class="hero_card_item">
+                            <img src="./assets/refresh2.jpg" alt="Home">
+                            <a href="#"><span>Home</span></a>
+                        </div>
+
+                        <div class="hero_card_item">
+                            <img src="./assets/refresh3.jpg" alt="Kitchen">
+                            <a href="#"><span>Kitchen</span></a>
+                        </div>
+
+                        <div class="hero_card_item">
+                            <img src="./assets/refresh4.jpg" alt="Health and Beauty">
+                            <a href="#"><span>Health and Beauty</span></a>
+                        </div>
+
+                    </div>
+
+                    <a href="#" class="card_link">See more</a>
+                </div>
+
+                <div class="hero_card">
+                    <h1>Shop deals in Fashion</h1>
+
+                    <div class="hero_card_content">
+
+                        <div class="hero_card_item">
+                            <img src="./assets/shop1.jpg" alt="Jeans under $50">
+                            <a href="#"><span>Jeans under $50</span></a>
+                        </div>
+
+                        <div class="hero_card_item">
+                            <img src="./assets/shop2.jpg" alt="Tops under $25">
+                            <a href="#"><span>Tops under $25</span></a>
+                        </div>
+
+                        <div class="hero_card_item">
+                            <img src="./assets/shop3.jpg" alt="Dresses under $30">
+                            <a href="#"><span>Dresses under $30</span></a>
+                        </div>
+
+                        <div class="hero_card_item">
+                            <img src="./assets/shop4.jpg" alt="Shoes under $50">
+                            <a href="#"><span>Shoes under $50</span></a>
+                        </div>
+
+                    </div>
+
+                    <a href="#" class="card_link">See more</a>
+                </div>
+
+                <div class="hero_card">
+                    <h1>Deals in PCs</h1>
+
+                    <div class="hero_card_content">
+
+                        <div class="hero_card_item">
+                            <img src="./assets/card_pc.jpg" alt="Pc">
+                        </div>
+
+                    </div>
+
+                    <a href="#" class="card_link">See more</a>
+                </div>
+
+                <div class="hero_card">
+                    <h1>Toys under $25</h1>
+
+                    <div class="hero_card_content">
+
+                        <div class="hero_card_item">
+                            <img src="./assets/toy_under_25.jpg" alt="Toy">
+                        </div>
+
+                    </div>
+
+                    <a href="#" class="card_link">See more</a>
+                </div>
+
+                <div class="hero_card">
+                    <h1>Fashion trends you like</h1>
+
+                    <div class="hero_card_content">
+
+                        <div class="hero_card_item">
+                            <img src="./assets/fashion1.jpg" alt="Dresses">
+                            <a href="#"><span>Dresses</span></a>
+                        </div>
+
+                        <div class="hero_card_item">
+                            <img src="./assets/fashion2.jpg" alt="Knits">
+                            <a href="#"><span>Knits</span></a>
+                        </div>
+
+                        <div class="hero_card_item">
+                            <img src="./assets/fashion3.jpg" alt="Jackets">
+                            <a href="#"><span>Jackets</span></a>
+                        </div>
+
+                        <div class="hero_card_item">
+                            <img src="./assets/fashion4.jpg" alt="Jewelry">
+                            <a href="#"><span>Jewelry</span></a>
+                        </div>
+
+                    </div>
+
+                    <a href="#" class="card_link">Explore more</a>
+                </div>
+
+                <div class="hero_card">
+                    <h1>Beauty steals under $25</h1>
+
+                    <div class="hero_card_content">
+
+                        <div class="hero_card_item">
+                            <img src="./assets/beauty_under_25.jpg" alt="Toy">
+                        </div>
+
+                    </div>
+
+                    <a href="#" class="card_link">See more</a>
+                </div>
+
+                <div class="hero_card">
+                    <h1>Home décor under $50</h1>
+
+                    <div class="hero_card_content">
+
+                        <div class="hero_card_item">
+                            <img src="./assets/home_under_50.jpg" alt="Toy">
+                        </div>
+
+                    </div>
+
+                    <a href="#" class="card_link">See more</a>
+                </div>
+
+            </div>
+
+        </section>
+        <!-- hero end -->
+    </main>
+    <!-- main end -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="deliver_modal_bg" class="modal_bg deliver_modal_bg">
+        
+        <div class="nav_deliver_modal" id="nav_deliver_modal">
+            <div class="deliver_modal_top">
+                <p>Choose your location</p>
+                <p id="deliver_modal_close">✕</p>
+            </div>
+
+            <div class="deliver_sign_in">
+                <p>Delivery options and delivery speeds may vary for different locations</p>
+                <button>Sign in to see your addresses</button>
+            </div>
+
+            <div class="deliver_main">
+                <div class="deliver_hr">
+                    <span>or enter a US zip code</span>
+                </div>
+
+                <form>
+                    <input type="text" required>
+                    <button>Apply</button>
+                </form>
+
+                <div class="deliver_hr">
+                    <span>or</span>
+                </div>
+
+                <select class="a-native-dropdown a-declarative" id="GLUXCountryList" tabindex="0">
+                    <optgroup>
+                        <option value="AU">Australia</option>
+                        <option value="CA">Canada</option>
+                        <option value="CN">China</option>
+                        <option value="JP">Japan</option>
+                        <option value="MX">Mexico</option>
+                        <option value="SG">Singapore</option>
+                        <option value="GB">United Kingdom</option>
+                    </optgroup>
+                    <optgroup>
+                        <option value="AF">Afghanistan</option>
+                        <option value="AX">Aland Islands</option>
+                        <option value="AL">Albania</option>
+                        <option value="DZ">Algeria</option>
+                        <option value="AS">American Samoa</option>
+                        <option value="AD">Andorra</option>
+                        <option value="AO">Angola</option>
+                        <option value="AI">Anguilla</option>
+                        <option value="AG">Antigua and Barbuda</option>
+                        <option value="AR">Argentina</option>
+                        <option value="AM">Armenia</option>
+                        <option value="AW">Aruba</option>
+                        <option value="AU">Australia</option>
+                        <option value="AT">Austria</option>
+                        <option value="AZ">Azerbaijan</option>
+                        <option value="BS">Bahamas, The</option>
+                        <option value="BH">Bahrain</option>
+                        <option value="BD">Bangladesh</option>
+                        <option value="BB">Barbados</option>
+                        <option value="BY">Belarus</option>
+                        <option value="BE">Belgium</option>
+                        <option value="BZ">Belize</option>
+                        <option value="BJ">Benin</option>
+                        <option value="BM">Bermuda</option>
+                        <option value="BT">Bhutan</option>
+                        <option value="BO">Bolivia</option>
+                        <option value="BQ">Bonaire, Saint Eustatius and Saba</option>
+                        <option value="BA">Bosnia and Herzegovina</option>
+                        <option value="BW">Botswana</option>
+                        <option value="BV">Bouvet Island</option>
+                        <option value="BR">Brazil</option>
+                        <option value="IO">British Indian Ocean Territory</option>
+                        <option value="BN">Brunei Darussalam</option>
+                        <option value="BG">Bulgaria</option>
+                        <option value="BF">Burkina Faso</option>
+                        <option value="BI">Burundi</option>
+                        <option value="KH">Cambodia</option>
+                        <option value="CM">Cameroon</option>
+                        <option value="CA">Canada</option>
+                        <option value="CV">Cape Verde</option>
+                        <option value="KY">Cayman Islands</option>
+                        <option value="CF">Central African Republic</option>
+                        <option value="TD">Chad</option>
+                        <option value="CL">Chile</option>
+                        <option value="CN">China</option>
+                        <option value="CX">Christmas Island</option>
+                        <option value="CC">Cocos (Keeling) Islands</option>
+                        <option value="CO">Colombia</option>
+                        <option value="KM">Comoros</option>
+                        <option value="CG">Congo</option>
+                        <option value="CD">Congo, The Democratic Republic of the</option>
+                        <option value="CK">Cook Islands</option>
+                        <option value="CR">Costa Rica</option>
+                        <option value="CI">Cote D'ivoire</option>
+                        <option value="HR">Croatia</option>
+                        <option value="CW">Curaçao</option>
+                        <option value="CY">Cyprus</option>
+                        <option value="CZ">Czech Republic</option>
+                        <option value="DK">Denmark</option>
+                        <option value="DJ">Djibouti</option>
+                        <option value="DM">Dominica</option>
+                        <option value="DO">Dominican Republic</option>
+                        <option value="EC">Ecuador</option>
+                        <option value="EG">Egypt</option>
+                        <option value="SV">El Salvador</option>
+                        <option value="GQ">Equatorial Guinea</option>
+                        <option value="ER">Eritrea</option>
+                        <option value="EE">Estonia</option>
+                        <option value="ET">Ethiopia</option>
+                        <option value="FK">Falkland Islands (Malvinas)</option>
+                        <option value="FO">Faroe Islands</option>
+                        <option value="FJ">Fiji</option>
+                        <option value="FI">Finland</option>
+                        <option value="FR">France</option>
+                        <option value="GF">French Guiana</option>
+                        <option value="PF">French Polynesia</option>
+                        <option value="TF">French Southern Territories</option>
+                        <option value="GA">Gabon</option>
+                        <option value="GM">Gambia, The</option>
+                        <option value="GE">Georgia</option>
+                        <option value="DE">Germany</option>
+                        <option value="GH">Ghana</option>
+                        <option value="GI">Gibraltar</option>
+                        <option value="GR">Greece</option>
+                        <option value="GL">Greenland</option>
+                        <option value="GD">Grenada</option>
+                        <option value="GP">Guadeloupe</option>
+                        <option value="GT">Guatemala</option>
+                        <option value="GG">Guernsey</option>
+                        <option value="GN">Guinea</option>
+                        <option value="GW">Guinea-Bissau</option>
+                        <option value="GY">Guyana</option>
+                        <option value="HT">Haiti</option>
+                        <option value="HM">Heard Island and the McDonald Islands</option>
+                        <option value="VA">Holy See</option>
+                        <option value="HN">Honduras</option>
+                        <option value="HK">Hong Kong</option>
+                        <option value="HU">Hungary</option>
+                        <option value="IS">Iceland</option>
+                        <option value="IN">India</option>
+                        <option value="ID">Indonesia</option>
+                        <option value="IQ">Iraq</option>
+                        <option value="IE">Ireland</option>
+                        <option value="IM">Isle of Man</option>
+                        <option value="IL">Israel</option>
+                        <option value="IT">Italy</option>
+                        <option value="JM">Jamaica</option>
+                        <option value="JP">Japan</option>
+                        <option value="JE">Jersey</option>
+                        <option value="JO">Jordan</option>
+                        <option value="KZ">Kazakhstan</option>
+                        <option value="KE">Kenya</option>
+                        <option value="KI">Kiribati</option>
+                        <option value="XK">Kosovo</option>
+                        <option value="KW">Kuwait</option>
+                        <option value="KG">Kyrgyzstan</option>
+                        <option value="LA">Lao People's Democratic Republic</option>
+                        <option value="LV">Latvia</option>
+                        <option value="LB">Lebanon</option>
+                        <option value="LS">Lesotho</option>
+                        <option value="LR">Liberia</option>
+                        <option value="LY">Libya</option>
+                        <option value="LI">Liechtenstein</option>
+                        <option value="LT">Lithuania</option>
+                        <option value="LU">Luxembourg</option>
+                        <option value="MO">Macao</option>
+                        <option value="MK">Macedonia, The Former Yugoslav Republic of</option>
+                        <option value="MG">Madagascar</option>
+                        <option value="MW">Malawi</option>
+                        <option value="MY">Malaysia</option>
+                        <option value="MV">Maldives</option>
+                        <option value="ML">Mali</option>
+                        <option value="MT">Malta</option>
+                        <option value="MH">Marshall Islands</option>
+                        <option value="MQ">Martinique</option>
+                        <option value="MR">Mauritania</option>
+                        <option value="MU">Mauritius</option>
+                        <option value="YT">Mayotte</option>
+                        <option value="MX">Mexico</option>
+                        <option value="FM">Micronesia, Federated States of</option>
+                        <option value="MD">Moldova, Republic of</option>
+                        <option value="MC">Monaco</option>
+                        <option value="MN">Mongolia</option>
+                        <option value="ME">Montenegro</option>
+                        <option value="MS">Montserrat</option>
+                        <option value="MA">Morocco</option>
+                        <option value="MZ">Mozambique</option>
+                        <option value="MM">Myanmar</option>
+                        <option value="NA">Namibia</option>
+                        <option value="NR">Nauru</option>
+                        <option value="NP">Nepal</option>
+                        <option value="NL">Netherlands</option>
+                        <option value="AN">Netherlands Antilles</option>
+                        <option value="NC">New Caledonia</option>
+                        <option value="NZ">New Zealand</option>
+                        <option value="NI">Nicaragua</option>
+                        <option value="NE">Niger</option>
+                        <option value="NG">Nigeria</option>
+                        <option value="NU">Niue</option>
+                        <option value="NF">Norfolk Island</option>
+                        <option value="NO">Norway</option>
+                        <option value="OM">Oman</option>
+                        <option value="PK">Pakistan</option>
+                        <option value="PW">Palau</option>
+                        <option value="PS">Palestinian Territories</option>
+                        <option value="PA">Panama</option>
+                        <option value="PG">Papua New Guinea</option>
+                        <option value="PY">Paraguay</option>
+                        <option value="PE">Peru</option>
+                        <option value="PH">Philippines</option>
+                        <option value="PN">Pitcairn</option>
+                        <option value="PL">Poland</option>
+                        <option value="PT">Portugal</option>
+                        <option value="QA">Qatar</option>
+                        <option value="KR">Republic of Korea</option>
+                        <option value="RE">Reunion</option>
+                        <option value="RO">Romania</option>
+                        <option value="RU">Russian Federation</option>
+                        <option value="RW">Rwanda</option>
+                        <option value="BL">Saint Barthelemy</option>
+                        <option value="SH">Saint Helena, Ascension and Tristan da Cunha</option>
+                        <option value="KN">Saint Kitts and Nevis</option>
+                        <option value="LC">Saint Lucia</option>
+                        <option value="MF">Saint Martin</option>
+                        <option value="PM">Saint Pierre and Miquelon</option>
+                        <option value="VC">Saint Vincent and the Grenadines</option>
+                        <option value="WS">Samoa</option>
+                        <option value="SM">San Marino</option>
+                        <option value="ST">Sao Tome and Principe</option>
+                        <option value="SA">Saudi Arabia</option>
+                        <option value="SN">Senegal</option>
+                        <option value="RS">Serbia</option>
+                        <option value="SC">Seychelles</option>
+                        <option value="SL">Sierra Leone</option>
+                        <option value="SG">Singapore</option>
+                        <option value="SX">Sint Maarten</option>
+                        <option value="SK">Slovakia</option>
+                        <option value="SI">Slovenia</option>
+                        <option value="SB">Solomon Islands</option>
+                        <option value="SO">Somalia</option>
+                        <option value="ZA">South Africa</option>
+                        <option value="GS">South Georgia and the South Sandwich Islands</option>
+                        <option value="ES">Spain</option>
+                        <option value="LK">Sri Lanka</option>
+                        <option value="SR">Suriname</option>
+                        <option value="SJ">Svalbard and Jan Mayen</option>
+                        <option value="SZ">Swaziland</option>
+                        <option value="SE">Sweden</option>
+                        <option value="CH">Switzerland</option>
+                        <option value="TW">Taiwan</option>
+                        <option value="TJ">Tajikistan</option>
+                        <option value="TZ">Tanzania, United Republic of</option>
+                        <option value="TH">Thailand</option>
+                        <option value="TL">Timor-leste</option>
+                        <option value="TG">Togo</option>
+                        <option value="TK">Tokelau</option>
+                        <option value="TO">Tonga</option>
+                        <option value="TT">Trinidad and Tobago</option>
+                        <option value="TN">Tunisia</option>
+                        <option value="TR">Turkey</option>
+                        <option value="TM">Turkmenistan</option>
+                        <option value="TC">Turks and Caicos Islands</option>
+                        <option value="TV">Tuvalu</option>
+                        <option value="UG">Uganda</option>
+                        <option value="UA">Ukraine</option>
+                        <option value="AE">United Arab Emirates</option>
+                        <option value="GB">United Kingdom</option>
+                        <option value="UM">United States Minor Outlying Islands</option>
+                        <option value="UY">Uruguay</option>
+                        <option value="UZ" selected>Uzbekistan</option>
+                        <option value="VU">Vanuatu</option>
+                        <option value="VE">Venezuela</option>
+                        <option value="VN">Vietnam</option>
+                        <option value="VG">Virgin Islands, British</option>
+                        <option value="WF">Wallis and Futuna</option>
+                        <option value="EH">Western Sahara</option>
+                        <option value="YE">Yemen</option>
+                        <option value="ZM">Zambia</option>
+                        <option value="ZW">Zimbabwe</option>
+                    </optgroup>
+                </select>
+
+                <div class="deliver_done">
+                    <button>Done</button>                
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="nav_bottom_bg" id="nav_bottom_bg">
+        <div class="nav_bottom_modal_close" id="nav_bottom_modal_close">✕</div>
+
+        <div class="nav_bottom_modal" id="nav_bottom_modal">
+
+            <div class="nav_bottom_modal_top">
+                <i class="fa-solid fa-circle-user"></i>
+                <p>Hello, sign in</p>
+            </div>
+
+            <div class="nav_bottom_modal_main">
+                
+                <div>
+                    <h1>Digital Content & Devices</h1>
+
+                    <div>
+                        <p>Amazon Music</p>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+
+                    <div>
+                        <p>Kindle E-readers & Books</p>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+
+                    <div>
+                        <p>Amazon Appstore</p>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                </div>
+
+                <div style="border-top: 1px solid #d5d9d9;">
+                    <h1>Shop by Department</h1>
+
+                    <div>
+                        <p>Electronics</p>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+
+                    <div>
+                        <p>Computers</p>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+
+                    <div>
+                        <p>Smart Home</p>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+
+                    <div>
+                        <p>Arts & Crafts</p>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+
+                    <div style="justify-content: unset; gap: 10px;">
+                        <p>See all</p>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+
+                <div style="border-top: 1px solid #d5d9d9;">
+                    <h1>Programs & Features</h1>
+
+                    <div>
+                        <p>Gift Cards</p>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+
+                    <div>
+                        <p>Shop By Interest</p>
+                    </div>
+
+                    <div>
+                        <p>Amazon Live</p>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+
+                    <div>
+                        <p>International Shopping</p>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+
+                    <div style="justify-content: unset; gap: 10px;">
+                        <p>See all</p>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+
+                <div style="border-top: 1px solid #d5d9d9;">
+                    <h1>Help & Settings</h1>
+
+                    <div style="justify-content: unset; gap: 10px;">
+                        <p>Your Account</p>
+                    </div>
+
+                    <div style="justify-content: unset; gap: 10px;">
+                        <i class="fa-solid fa-globe"></i>
+                        <p>English</p>
+                    </div>
+
+                    <div style="justify-content: unset; gap: 10px;">
+                        <img src="./assets/usa_flag.png" alt="usa_flag" style="height: 12px;">
+                        <p>United States</p>
+                    </div>
+
+                    <div style="justify-content: unset; gap: 10px;">
+                        <p>Customer Service</p>
+                    </div>
+
+                    <div style="justify-content: unset; gap: 10px;">
+                        <p>Sign in</p>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <div class="modal_bg" id="modal_bg"></div>
+
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
